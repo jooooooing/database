@@ -17,14 +17,14 @@ public class reportCard {
 		Statement stmt = conn.createStatement();
 		// 데이터베이스로 SQL 문을 보내기 위한 SQLServerStatement 개체를 생성
 
-//		stmt.execute("create table reportCard(" + // repoertCard 테이블 생성
-//				"idnumber	 varchar(50)," + // 학번
-//				"name varchar(50), " + // 이름
-//				"kor int, " + // 국어
-//				"eng int," + // 영어
-//				"math int, " + // 수학
-//				"CONSTRAINT PK PRIMARY KEY (idnumber)" + // PK 설정
-//				") DEFAULT CHARSET=utf8; ");
+		stmt.execute("create table reportCard(" + // repoertCard 테이블 생성
+				"idnumber	 varchar(50)," + // 학번
+				"name varchar(50), " + // 이름
+				"kor int, " + // 국어
+				"eng int," + // 영어
+				"math int, " + // 수학
+				"CONSTRAINT PK PRIMARY KEY (idnumber)" + // PK 설정
+				") DEFAULT CHARSET=utf8; ");
 
 //		stmt.execute("drop table reportCard;"); //테이블 완전 삭제
 //		stmt.execute("delete from reportCard;"); //테이블 내용 삭제

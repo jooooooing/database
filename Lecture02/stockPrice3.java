@@ -34,8 +34,6 @@ public class stockPrice3 {
 
 		String readtxt; // 파일 읽어서 저장할 string 변수 지정
 
-
-
 		br.close(); // 닫기
 		pstmt.close(); // 닫기
 		conn.close(); // 닫기
