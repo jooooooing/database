@@ -119,7 +119,7 @@ public class stockPriceAll_gyu_create {
 	              "buyin_tod_tr_pbmn varchar(50) , "+      //Buy-in 당일 체결 대금
 	              "constraint stocktable_PK primary key(shrn_iscd, bsop_date))" +
 	              "DEFAULT CHARSET=   utf8;"
-	              );   //설치시설구분
+	              );   
 
 	      
 	      stmt.close(); //Statement 종료

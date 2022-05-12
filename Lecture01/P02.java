@@ -19,7 +19,7 @@ public class P02 {
 		Statement stmt = conn.createStatement();
 		//데이터베이스로 SQL 문을 보내기 위한 SQLServerStatement 개체를 생성
 		
-		stmt.execute("drop table examtable;");
+		stmt.execute("drop table examtable1;");
 		
 		//명령 examtable을 완전 삭제함
 		

@@ -17,7 +17,7 @@ public class P04 {
 		//드라이버서버에 접속할 수 있는 커넥션 객체를 가져옴 (url, id , pw)
 		
 		Statement stmt = conn.createStatement();  //데이터베이스로 SQL 문을 보내기 위한 SQLServerStatement 개체를 생성
-		ResultSet rset = stmt.executeQuery("select * from examtable;"); //저장된 SQL문을 실행하고 resultset개체를 반환
+		ResultSet rset = stmt.executeQuery("select * from examtable1;"); //저장된 SQL문을 실행하고 resultset개체를 반환
 		
 		System.out.println("  이름  학번 국어 영어 수학"); //헤더 출력
 		while(rset.next()) { //resultset 반복

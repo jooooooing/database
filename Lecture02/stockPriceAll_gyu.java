@@ -61,7 +61,7 @@ public class stockPriceAll_gyu {
 			conn.setAutoCommit(false); // setAutoCommit(false) : commit 실행중 에러가 발생하면, 사용자가 직접 commit/rollback을 하겠다
 			long start = System.currentTimeMillis(); // 시간을 밀리세컨 단위로 불러온다.
 
-			int numforField = 0; // 읽어드린
+			int numforField = 0; // 읽어드린 필드 숫자
 
 			while ((readtxt = br.readLine()) != null) { // 읽어드린 readline이 null이 아니면 계쏙 반복문을 수행한다.
 				String[] field = readtxt.split(","); // readtext를 가져와 문자열 배열 field에 순서대로 부여한다.
@@ -80,7 +80,6 @@ public class stockPriceAll_gyu {
 				} finally {
 					lineCnt++;// 변수에 1을 더해준다.
 					numforField++;
-
 					try {
 						if (lineCnt % 10000 == 0) {// 10000으로 나누어 떨어지면
 							pstmt.executeBatch();// 모아둔 쿼리를 한번에 DB쪽으로 날린다.
@@ -90,10 +89,7 @@ public class stockPriceAll_gyu {
 						e.printStackTrace(); // 애러문구를 출력한다.
 					}
 				}
-				
-				if (lineCnt == 2000) {
-					break;
-				}
+
 			}
 
 			try {
