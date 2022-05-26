@@ -20,6 +20,9 @@ public class P01 {
 		stmt.execute( "create table examtable1(" + "name varchar(20)," + "studentid int not null primary key,"
 				+ "kor int," + "eng int," + "mat int)" + "DEFAULT CHARSET=utf8;");		
 		//명령 examtable을 만들고 20자 name, studentid int이고 값이 있어야하고 primary key로 설정, kor int, eng int, mat int를 생성함 
+		
+		stmt.close(); //닫기
+		conn.close(); //닫기
 
 	}
 

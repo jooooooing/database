@@ -58,7 +58,7 @@ public class stockPriceAll_gyu {
 			String[] field_name = readtxt.split(","); // csv파일이므로 컴마기준으로 문자열을 나눠 field_Name으로 문자열 나눔.
 
 			int lineCnt = 0; // 라인수를 카운트하기 위한 정수형 변수를 선언하고 0으로 초기화한다.
-			conn.setAutoCommit(false); // setAutoCommit(false) : commit 실행중 에러가 발생하면, 사용자가 직접 commit/rollback을 하겠다
+			conn.setAutoCommit(false); // setAutoCommit(false) : commit 실행중 에러가 발생하d면, 사용자가 직접 commit/rollback을 하겠다
 			long start = System.currentTimeMillis(); // 시간을 밀리세컨 단위로 불러온다.
 
 			int numforField = 0; // 읽어드린 필드 숫자
